@@ -1,30 +1,23 @@
 import Vue from "vue";
 import Router from "vue-router";
+
 import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
-import Components from "./views/Components.vue";
+
 import Landing from "./views/Landing.vue";
+
+import Event from "./views/Event.vue";
+
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
-import Profile from "./views/Profile.vue";
 
 Vue.use(Router);
 
-export default new Router({
-  linkExactActiveClass: "active",
+const routes = new Router({
   routes: [
     {
-	  path: "/",
-      name: "components",
-      components: {
-        header: AppHeader,
-        default: Components,
-        footer: AppFooter
-      }
-    },
-    {
-      path: "/landing",
-      name: "landing",
+      path: "/",
+      name: "home",
       components: {
         header: AppHeader,
         default: Landing,
@@ -32,8 +25,8 @@ export default new Router({
       }
     },
     {
-      path: "/login",
-      name: "login",
+      path: "/sign-in",
+      name: "sign-in",
       components: {
         header: AppHeader,
         default: Login,
@@ -50,11 +43,11 @@ export default new Router({
       }
     },
     {
-      path: "/profile",
-      name: "profile",
+      path: "/event",
+      name: "event",
       components: {
         header: AppHeader,
-        default: Profile,
+        default: Event,
         footer: AppFooter
       }
     }
@@ -65,5 +58,8 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
+  mode: "history"
 });
+
+export default routes;
