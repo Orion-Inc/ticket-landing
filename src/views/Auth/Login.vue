@@ -35,12 +35,12 @@
                     </card>
                     <div class="row mt-4 mb-5">
                         <div class="col-6">
-                            <router-link to="/forgot-password" class="text-light">
+                            <router-link :to="{ name: 'forgot-password'}" class="text-light">
                                 <small>Forgot password?</small>
                             </router-link>
                         </div>
                         <div class="col-6 text-right">
-                            <router-link to="/register" class="text-light">
+                            <router-link :to="{ name: 'register'}" class="text-light">
                                 <small>Create new account</small>
                             </router-link>
                         </div>

@@ -1,6 +1,6 @@
 <template>
     <header class="header-global">
-        <base-nav class="navbar-main" transparent type="" effect="light" expand>
+        <base-nav class="navbar-main" transparent type="default" effect="dark" expand>
             <router-link :to="{ name: 'home'}" slot="brand" class="navbar-brand mr-lg-5">
                 <img src="#">
             </router-link>
@@ -16,7 +16,7 @@
                 </div>
             </div>
 
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+            <ul class="navbar-nav -navbar-nav-hover align-items-lg-center">
                 <base-dropdown class="nav-item" menu-classes="dropdown-menu-xl">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-ui-04 d-lg-none"></i>
@@ -60,7 +60,6 @@
 
             <ul class="navbar-nav align-items-lg-center ml-lg-auto">
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    
                     <div v-if="$route.name == 'home'">
                         <router-link :to="{ name: 'home'}" class="btn btn-outline-secondary">
                             <span class="nav-link-inner--text">Create An Event</span>

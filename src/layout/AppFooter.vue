@@ -11,16 +11,16 @@
                 <div class="col-md-6">
                     <ul class="nav nav-footer justify-content-end">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">About</a>
+                            <a href="/about" class="nav-link">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">FAQs</a>
+                            <a href="/faqs" class="nav-link">FAQs</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contact</a>
+                            <a href="/contact" class="nav-link">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Privacy Policy</a>
+                            <a href="/privacy-policy" class="nav-link">Privacy Policy</a>
                         </li>
                     </ul>
                 </div>

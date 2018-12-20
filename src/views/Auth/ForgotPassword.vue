@@ -19,7 +19,7 @@
                     <div class="row mt-5 mb-5">
                         <div class="col-12 text-center">
                             <small>Remember Password? </small>
-                            <router-link to="/sign-in" class="text-light">
+                            <router-link :to="{ name: 'sign-in'}" class="text-light">
                                 <small>Sign In</small>
                             </router-link>
                         </div>
