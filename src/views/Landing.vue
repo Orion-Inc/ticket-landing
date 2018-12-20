@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="d-none">
 
         <div class="position-relative">
             <!-- shape Hero -->
@@ -502,7 +502,7 @@
 
 <script>
 export default {
-  name: "home",
-  components: {}
+    name: "home",
+    components: {}
 };
 </script>

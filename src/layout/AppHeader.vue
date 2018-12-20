@@ -44,17 +44,18 @@
                     </div>
                 </base-dropdown>
                 
-            </ul>
-
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
                 <base-dropdown tag="li" class="nav-item">
                     <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
                         <i class="ni ni-collection d-lg-none"></i>
-                        <span class="nav-link-inner--text">How We Work</span>
+                        <span class="nav-link-inner--text">How It Works</span>
                     </a>
                     <!-- <router-link to="" class="dropdown-item">Landing</router-link> -->
                     
                 </base-dropdown>
+            </ul>
+
+            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                
                 <li class="nav-item d-none d-lg-block ml-lg-4">
                     <div v-if="$route.name != 'sign-in'">
                         <router-link to="/sign-in" class="btn btn-neutral">

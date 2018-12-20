@@ -10,6 +10,7 @@ import Event from "./views/Event.vue";
 
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
+import ForgotPassword from "./views/ForgotPassword.vue";
 
 Vue.use(Router);
 
@@ -39,6 +40,15 @@ const routes = new Router({
       components: {
         header: AppHeader,
         default: Register,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/forgot-password",
+      name: "forgot-password",
+      components: {
+        header: AppHeader,
+        default: ForgotPassword,
         footer: AppFooter
       }
     },

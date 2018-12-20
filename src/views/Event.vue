@@ -1,15 +1,7 @@
 <template>
     <div class="profile-page">
-        <section class="section-profile-cover section-shaped my-0">
-            <div class="shape shape-style-1 shape-primary shape-skew alpha-4">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+        <section class="section-profile-cover section-shaped my-0 bg-gradient-default">
+            
         </section>
         <section class="section section-skew">
             <div class="container">
@@ -58,7 +50,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-9">
                                     <p>An artist of considerable range, Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure. An artist of considerable range.</p>
-                                    <a href="#">Show more</a>
+                                    <a href="#">Buy Ticket</a>
                                 </div>
                             </div>
                         </div>
