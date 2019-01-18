@@ -11,7 +11,7 @@
                             <form role="form">
                                 <base-input class="mb-3" placeholder="Email" addon-left-icon="ni ni-email-83"></base-input>
                                 <div class="text-center">
-                                    <base-button type="primary" class="my-4" block>Send Email</base-button>
+                                    <base-button type="default" class="my-4" block>Send Email</base-button>
                                 </div>
                             </form>
                         </template>

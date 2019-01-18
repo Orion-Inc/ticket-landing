@@ -12,7 +12,7 @@
                                 <base-input class="mb-3" placeholder="Email" addon-left-icon="ni ni-single-02"></base-input>
                                 <base-input type="password" placeholder="Password" addon-left-icon="ni ni-lock-circle-open"></base-input>
                                 <div class="text-center">
-                                    <base-button type="primary" class="my-4" block>Sign In</base-button>
+                                    <base-button type="default" class="my-4" block>Sign In</base-button>
                                 </div>
                             </form>
                         </template>

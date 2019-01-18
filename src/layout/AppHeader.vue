@@ -1,6 +1,6 @@
 <template>
     <header class="header-global">
-        <base-nav class="navbar-main" transparent type="" effect="light" expand>
+        <base-nav class="navbar-main" transparent type="" effect="light" sticky="true" expand>
             <router-link :to="{ name: 'home'}" slot="brand" class="navbar-brand mr-lg-5">
                 <img src="#">
             </router-link>
@@ -29,7 +29,7 @@
                             </div>
                             <div class="media-body ml-3">
                                 <h6 class="heading text-default mb-md-1">Events</h6>
-                                <p class="description d-none d-md-inline-block mb-0"></p>
+                                <p class="description d-none d-md-inline-block mb-0">Find an event near you.</p>
                             </div>
                         </router-link>
 
@@ -39,7 +39,7 @@
                             </div>
                             <div class="media-body ml-3">
                                 <h5 class="heading text-default mb-md-1">Movies</h5>
-                                <p class="description d-none d-md-inline-block mb-0"></p>
+                                <p class="description d-none d-md-inline-block mb-0">See what's showing in the cinemas.</p>
                             </div>
                         </router-link>
                     </div>
@@ -79,6 +79,14 @@
                         </router-link>
                     </div>
                 </li>
+                <b-nav-item-dropdown right>
+                    <!-- Using button-content slot -->
+                    <template slot="button-content">
+                        User
+                    </template>
+                    <b-dropdown-item href="#">Profile</b-dropdown-item>
+                    <b-dropdown-item href="#">Signout</b-dropdown-item>
+                </b-nav-item-dropdown>
             </ul>
         </base-nav>
     </header>

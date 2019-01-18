@@ -31,7 +31,6 @@ const routes = new Router({
   routes: [
     {
       path: "/",
-      name: "home",
       component: Landing,
       children: [
         {
@@ -47,7 +46,7 @@ const routes = new Router({
           path: "about",
           name: "about",
           components: {
-            header: AppHeader,
+            header: AppHeaderAlt,
             default: About,
             footer: AppFooter
           }
@@ -67,7 +66,7 @@ const routes = new Router({
           components: {
             header: AppHeaderAlt,
             default: Contact,
-            footer: AppFooter
+            footer: AppFooterAlt
           }
         },
         {
@@ -76,7 +75,7 @@ const routes = new Router({
           components: {
             header: AppHeaderAlt,
             default: Faqs,
-            footer: AppFooter
+            footer: AppFooterAlt
           }
         },
         {
@@ -85,7 +84,7 @@ const routes = new Router({
           components: {
             header: AppHeaderAlt,
             default: Privacy,
-            footer: AppFooter
+            footer: AppFooterAlt
           }
         }
       ]
@@ -128,15 +127,6 @@ const routes = new Router({
       component: Discover,
       children: [
         {
-          path: "event",
-          name: "event",
-          components: {
-            header: AppHeader,
-            default: Event,
-            footer: AppFooter
-          }
-        },
-        {
           path: "events",
           name: "events",
           components: {
@@ -146,11 +136,11 @@ const routes = new Router({
           }
         },
         {
-          path: "movie",
-          name: "movie",
+          path: "events/:id",
+          name: "event",
           components: {
             header: AppHeader,
-            default: Movie,
+            default: Event,
             footer: AppFooter
           }
         },
@@ -161,6 +151,15 @@ const routes = new Router({
             header: AppHeaderAlt,
             default: Movies,
             footer: AppFooterAlt
+          }
+        },
+        {
+          path: "movies/:id",
+          name: "movie",
+          components: {
+            header: AppHeader,
+            default: Movie,
+            footer: AppFooter
           }
         }
       ]
